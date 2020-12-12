@@ -10,19 +10,19 @@ namespace ProceduralLevel.UnityPluginsEditor.ExtendedEditor
 	{
 		public static bool PrintReflectionErrors = true;
 
-		public delegate ObjectType GetterDelegate<ObjectType, BaseType>(BaseType obj) where ObjectType: Object where BaseType: Object;
+		public delegate ObjectType GetterDelegate<ObjectType, BaseType>(BaseType obj) where ObjectType : Object where BaseType : Object;
 
 		public static List<ComponentType> GetAllPrefabsOfType<ComponentType>() where ComponentType : Component
 		{
 			return GetAllOfType<ComponentType, GameObject>("Prefab", (prefab) => prefab.GetComponent<ComponentType>());
 		}
 
-		public static List<ScriptableType> GetAllScriptableObjectsOfType<ScriptableType>() where ScriptableType: ScriptableObject
+		public static List<ScriptableType> GetAllScriptableObjectsOfType<ScriptableType>() where ScriptableType : ScriptableObject
 		{
 			return GetAllOfType<ScriptableType, ScriptableObject>("ScriptableObject", (obj) => obj as ScriptableType);
 		}
 
-		public static List<ObjectType> GetAllOfType<ObjectType, BaseType>(string searchType, GetterDelegate<ObjectType, BaseType> getter) where ObjectType: Object where BaseType: Object
+		public static List<ObjectType> GetAllOfType<ObjectType, BaseType>(string searchType, GetterDelegate<ObjectType, BaseType> getter) where ObjectType : Object where BaseType : Object
 		{
 			string[] guids = AssetDatabase.FindAssets("t:"+searchType);
 			List<ObjectType> objects = new List<ObjectType>();

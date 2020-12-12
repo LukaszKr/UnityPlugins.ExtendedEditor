@@ -1,5 +1,4 @@
-﻿using ProceduralLevel.UnityPluginsEditor.ExtendedEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace ProceduralLevel.UnityPluginsEditor.ExtendedEditor
 {

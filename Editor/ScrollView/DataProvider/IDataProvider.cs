@@ -4,7 +4,7 @@
 	{
 		int Count { get; }
 		EntryType this[int index] { get; }
-		
+
 		void RemoveAt(int index);
 	}
 }

@@ -1,16 +1,16 @@
-﻿using ProceduralLevel.UnityPluginsEditor.ExtendedEditor;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Reflection;
+using ProceduralLevel.UnityPluginsEditor.ExtendedEditor;
 using UnityEditor;
 using UnityEngine;
 
 namespace ProceduralLevel.UnityPlugins.Preferences
 {
 	public abstract class AEditorPrefs<TPrefs>
-		where TPrefs: class, new()
+		where TPrefs : class, new()
 	{
 		public static TPrefs Instance;
-		
+
 		public abstract string Prefix { get; }
 		public virtual bool SaveStatic { get { return false; } }
 		public virtual bool SavePrivate { get { return false; } }
@@ -31,7 +31,7 @@ namespace ProceduralLevel.UnityPlugins.Preferences
 		public void PreferencesGUI()
 		{
 			EditorGUI.BeginChangeCheck();
-			DisplayFields();			
+			DisplayFields();
 			if(EditorGUI.EndChangeCheck())
 			{
 				Save();

@@ -5,9 +5,9 @@ namespace ProceduralLevel.UnityPluginsEditor.ExtendedEditor
 {
 	public static class StyleHelper
 	{
-		public readonly static Color32 TransparentColor = new Color32(0, 0, 0, 255);
-		public readonly static Color32 ProSkinColor = new Color32(53, 53, 53, 255);
-		public readonly static Color32 FreeSkinColor = new Color32(194, 194, 194, 255);
+		public static readonly Color32 TransparentColor = new Color32(0, 0, 0, 255);
+		public static readonly Color32 ProSkinColor = new Color32(53, 53, 53, 255);
+		public static readonly Color32 FreeSkinColor = new Color32(194, 194, 194, 255);
 
 		public static Color32 SkinColor { get { return (EditorGUIUtility.isProSkin ? ProSkinColor : FreeSkinColor); } }
 		public static float LineHeight { get { return EditorGUIUtility.singleLineHeight; } }
@@ -38,7 +38,7 @@ namespace ProceduralLevel.UnityPluginsEditor.ExtendedEditor
 					}
 					else
 					{
-						texture.SetPixel(x, y, IsBorder(texture, x, y, false)? borderColor: baseColor);
+						texture.SetPixel(x, y, IsBorder(texture, x, y, false) ? borderColor : baseColor);
 					}
 				}
 			}

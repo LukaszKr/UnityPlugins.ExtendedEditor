@@ -8,7 +8,7 @@
 
 		public override string ToString()
 		{
-			return string.Format("[IsDirty: {0}, Height: {1}, Entry: {2}]", IsDirty.ToString(), Height.ToString(), (Entry != null? Entry.ToString(): ""));
+			return string.Format("[IsDirty: {0}, Height: {1}, Entry: {2}]", IsDirty.ToString(), Height.ToString(), (Entry != null ? Entry.ToString() : ""));
 		}
 	}
 }

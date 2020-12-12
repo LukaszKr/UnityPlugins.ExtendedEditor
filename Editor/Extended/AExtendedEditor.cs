@@ -4,17 +4,17 @@ using UnityEngine;
 
 namespace ProceduralLevel.UnityPluginsEditor.ExtendedEditor
 {
-	public abstract class AExtendedEditor<DataType>: Editor where DataType: Object
+	public abstract class AExtendedEditor<DataType>: Editor where DataType : Object
 	{
 		private bool m_Initialize = false;
 		private bool m_Compiling = false;
 
 		public DataType Target { get { return target as DataType; } }
-		
+
 		protected bool DisableOnCompile = true;
 		protected bool DrawDefault  = false;
 
-		public float Width { get { return Screen.width;} }
+		public float Width { get { return Screen.width; } }
 		public float Height { get { return Screen.height; } }
 
 		protected abstract void Initialize();
@@ -81,7 +81,7 @@ namespace ProceduralLevel.UnityPluginsEditor.ExtendedEditor
 		protected virtual void OnCompilationEnd() { }
 
 		protected abstract void Draw();
-		protected virtual void ChangesOccured() {}
+		protected virtual void ChangesOccured() { }
 
 		protected virtual void DrawCompilationScreen()
 		{

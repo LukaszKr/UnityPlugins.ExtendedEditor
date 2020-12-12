@@ -11,7 +11,7 @@ namespace ProceduralLevel.UnityPlugins.Preferences
 		private static List<Type> VALID_TYPES = new List<Type> { typeof(string), typeof(int), typeof(float), typeof(bool) };
 
 		#region Generic
-		public static void Clear<DataType>(string prefix, bool staticFields, bool includePrivate = INCLUDE_PRIVATE) where DataType: class
+		public static void Clear<DataType>(string prefix, bool staticFields, bool includePrivate = INCLUDE_PRIVATE) where DataType : class
 		{
 			List<FieldInfo> fields = GetValidFields(typeof(DataType), staticFields, includePrivate);
 			for(int x = 0; x < fields.Count; x++)
