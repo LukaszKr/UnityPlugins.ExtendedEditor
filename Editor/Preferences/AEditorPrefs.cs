@@ -27,15 +27,25 @@ namespace ProceduralLevel.UnityPlugins.Preferences
 			Load();
 		}
 
-		#region GUI
-		public void PreferencesGUI()
+		public void BeginChangeCheck()
 		{
 			EditorGUI.BeginChangeCheck();
-			DisplayFields();
+		}
+
+		public void EndChangeCheck()
+		{
 			if(EditorGUI.EndChangeCheck())
 			{
 				Save();
 			}
+		}
+
+		#region GUI
+		public void PreferencesGUI()
+		{
+			BeginChangeCheck();
+			DisplayFields();
+			EndChangeCheck();
 
 			EditorGUILayout.BeginHorizontal();
 			if(GUILayout.Button("Clear"))
