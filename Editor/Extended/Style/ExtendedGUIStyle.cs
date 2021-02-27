@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace ProceduralLevel.UnityPluginsEditor.ExtendedEditor
+namespace ProceduralLevel.UnityPlugins.ExtendedEditor.Editor
 {
 	//styles have to be created in OnGUI, to prevent initialization code polluting that place, let's have this!
 	public class ExtendedGUIStyle

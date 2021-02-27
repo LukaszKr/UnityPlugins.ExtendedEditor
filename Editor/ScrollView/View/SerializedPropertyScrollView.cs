@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace ProceduralLevel.UnityPluginsEditor.ExtendedEditor
+namespace ProceduralLevel.UnityPlugins.ExtendedEditor.Editor
 {
 	public class SerializedPropertyScrollView: ScrollView<SerializedProperty>
 	{

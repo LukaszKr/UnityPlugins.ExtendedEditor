@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace ProceduralLevel.UnityPluginsEditor.ExtendedEditor
+namespace ProceduralLevel.UnityPlugins.ExtendedEditor.Editor
 {
 	public static class SerializationHelper
 	{

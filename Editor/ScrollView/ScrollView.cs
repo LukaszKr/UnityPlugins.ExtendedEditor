@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace ProceduralLevel.UnityPluginsEditor.ExtendedEditor
+namespace ProceduralLevel.UnityPlugins.ExtendedEditor.Editor
 {
 	public class ScrollView<EntryType>
 	{

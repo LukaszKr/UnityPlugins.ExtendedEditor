@@ -2,9 +2,9 @@
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-namespace ProceduralLevel.UnityPluginsEditor.ExtendedEditor
+namespace ProceduralLevel.UnityPlugins.ExtendedEditor.Editor
 {
-	public abstract class AExtendedEditor<DataType>: Editor where DataType : Object
+	public abstract class AExtendedEditor<DataType>: UnityEditor.Editor where DataType : Object
 	{
 		private bool m_Initialize = false;
 		private bool m_Compiling = false;

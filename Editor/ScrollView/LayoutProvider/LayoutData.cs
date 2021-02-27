@@ -1,4 +1,4 @@
-﻿namespace ProceduralLevel.UnityPluginsEditor.ExtendedEditor
+﻿namespace ProceduralLevel.UnityPlugins.ExtendedEditor.Editor
 {
 	public struct LayoutData
 	{

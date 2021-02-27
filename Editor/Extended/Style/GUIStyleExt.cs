@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-namespace ProceduralLevel.UnityPluginsEditor.ExtendedEditor
+namespace ProceduralLevel.UnityPlugins.ExtendedEditor.Editor
 {
 	public static class GUIStyleExt
 	{

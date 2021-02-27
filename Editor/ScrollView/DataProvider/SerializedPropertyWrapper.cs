@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace ProceduralLevel.UnityPluginsEditor.ExtendedEditor
+namespace ProceduralLevel.UnityPlugins.ExtendedEditor.Editor
 {
 	internal class SerializedPropertyWrapper: IDataProvider<SerializedProperty>
 	{

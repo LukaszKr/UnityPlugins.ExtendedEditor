@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace ProceduralLevel.UnityPluginsEditor.ExtendedEditor
+namespace ProceduralLevel.UnityPlugins.ExtendedEditor.Editor
 {
 	public abstract class AExtendedEditorWindow: EditorWindow
 	{

@@ -1,5 +1,5 @@
 {
-    "name": "ProceduralLevel.UnityPluginsEditor.ExtendedEditor",
+    "name": "ProceduralLevel.UnityPlugins.ExtendedEditor.Editor",
     "references": [
         "GUID:210304052f12ca14a9ff88e9466ff4a5"
     ],
